@@ -11,6 +11,11 @@ def md5(fname):
     return hash_file.hexdigest()
 
 
+if sys.argv:
+    print(md5(sys.argv[0]))
+    sys.exit()
+
+
 MC_DIR = "%s\\.minecraft" % os.environ['APPDATA']
 
 config_hashes = []
