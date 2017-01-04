@@ -66,9 +66,13 @@ Minecraft Client arguments:
 В файле YggdrasilMinecraftSessionService.java содержится измененный код для версии 1.5.22 (\com\mojang\authlib\1.5.22\authlib-1.5.22.jar) результирующие *.class файлы можно поместить и в клиент и в сервер.
 
 ## PHP
-Для отловка ошибок на сервере, может потребоваться использование
+Для отловка ошибок на сервере, может потребоваться использование:
 ```php
 ini_set('error_reporting', E_ALL);
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
+```
+И для mysqli потребуется установить:
+```
+apt-get install php5-mysqlnd
 ```
