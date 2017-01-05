@@ -12,7 +12,7 @@ def md5(fname):
 
 
 if sys.argv:
-    print(md5(sys.argv[0]))
+    print(md5(sys.argv[1]))
     sys.exit()
 
 
